@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>A sample page</title>
+ <script src="helper.js"></script>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+     let monthNum = prompt("Which month you were born?");
+     let monthsNumInt = parseInt(monthNum);
+	 let monthsName = [
+    'January', 'February', 'March', 'April', 'May',
+    'June', 'July', 'August', 'September',
+    'October', 'November', 'December'
+    ];
+
+
+if (monthsNumInt < 12) {
+    alert('Month is ' + monthsName[monthsNumInt - 1]);
+}
+     
+     
+     else {
+         alert("Not a valid entry.");
+     }
+ </script>
+</body>
+</html>
