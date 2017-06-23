@@ -12,15 +12,14 @@
  </div>
  <script>
      let birthMonth = prompt("What is your birthday?")
-	 let monthSign = [
-    'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo',
-    'Virgo', 'Libra', 'Scorpio', 'Sagittarius',
-    'Capricorn', 'Aquarius', 'Pisces'
+	 let zod_signs = [
+    'Capricorn', 'Aquarius', 'Pisces', 'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo',  'Virgo', 'Libra', 'Scorpio', 'Sagittarius'
     ];
-     let day = today.getDate();
-     let month = today.getMonth();
+     let actualDate = new Date(birthMonth);
+     let day = actualDate.getDate();
+     let month = actualDate.getMonth();
      let astroSign = "";
-     switch(month)
+     switch(month){
              case 0: {//January
 			 if(day < 20)
 		 		astroSign = zod_signs[0];
@@ -94,13 +93,19 @@
 		 		astroSign = zod_signs[0];
 			}break;
  }
+   
+             
+             
+             
+             
+             
+             
+             
+             
              
     alert(astroSign);
 
-     
-     else {
-         alert("Not a valid entry.");
-     }
+
  </script>
 </body>
 </html>
