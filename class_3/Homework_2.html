@@ -3,7 +3,7 @@
 <html lang="en-US">
 <head>
  <meta charset="UTF-8">
- <title>Hours</title>
+ <title>Passed Time</title>
  <script src="helper.js"></script>
 </head>
 <body>
@@ -11,18 +11,11 @@
 
  </div>
  <script>
-     let timeNumber = prompt("What is your favorit number");
-     let hours = timeNumber.getHours();
-   
-
-if (yearNum > 1924) {
-    alert('Year is ' + yearSign[yearInt - 1]);
-}
-     
-     
-     else {
-         alert("Not a valid entry.");
-     }
+    let favoritNumber = prompt("What is your favorit number");
+    let time = new Date();
+     {alert ("Current time is " + time.getHours() + ":" + time.getMinutes())};
+    let passedTime = time.getHours() + parseInt(favoritNumber);
+      {alert ("Passed Time is " + (passedTime) + ":" + time.getMinutes())};
  </script>
 </body>
 </html>
