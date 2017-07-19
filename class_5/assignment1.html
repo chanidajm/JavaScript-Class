@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>Movie</title>
+</head>
+<body>
+ <div id="main">
+
+ </div>
+ <script>
+   function Movie(movieName)
+  {
+    this.title = movieName;
+    this.ratings = [];
+    this.avgRating = 0;
+    this.addRating = function (ratingIn)
+    {
+        this.ratings.push(ratingIn);
+        var sum = 0;
+        for(var i = 0; i < this.ratings.length; i++)
+        {
+          //echo(ratings[i]);
+          sum += this.ratings[i];
+        }
+        this.avgRating = sum / (this.ratings.length - 1);
+    };
+  }
+ </script>
+</body>
+</html>
